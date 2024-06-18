@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root
+{
+    --primary-color: #2c3855;
+    --primary-color-dark: #435681;
+    --text-dark: #333333;
+    --text-light: #767268;
+    --extra-light: #f3f4f6;
+    --white: #ffffff;
+    --max-width: 1920px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav
+{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.nav_logo img
+{
+    width: 66%;
+}
+
+.nav_link
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.link a 
+{
+    font-weight: 500;
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.link a:hover
+{
+    color: var(--primary-color);
+}
+
+.banner 
+{
+    position: relative;
+    text-align: center;
+}
+
+.banner img 
+{
+    width: 900px;
+    height: 200px;
+}
+
+.banner h1 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-dark);
+    font-size: 2em;
+}
+
+.booking-container 
+{
+    max-width: 800px;
+    margin: 2em auto;
+    text-align: center;
+}
+
+h2 
+{
+    color: var(--text-dark);
+}
+
+.transport-options 
+{
+    list-style: none;
+    padding: 0;
+}
+
+.transport-options li 
+{
+    margin: 1em;
+}
+
+.transport-options a 
+{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border: 2px solid #333;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.transport-options a:hover 
+{
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: all 0.7s;
+}
+
+footer 
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
