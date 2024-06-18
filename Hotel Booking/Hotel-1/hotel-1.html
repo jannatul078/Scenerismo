@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="hotel.css">
+    <title>Hotel Intercontinental Details</title>
+</head>
+<body>
+    <header>
+        <h1>Hotel Intercontinental</h1>
+    </header>
+
+    <section>
+        <div class="slider">
+            <div><img src="hotel-1 - Copy.jpg" alt="Hotel Intercontinental Image 1"></div>
+            <div><img src="hotel-exterior.jpg" alt="Hotel Intercontinental Image 2"></div>
+            <div><img src="hotel-interior.jpg" alt="Hotel Intercontinental Image 3"></div>
+        </div>
+    
+        <div class="hotel_details">
+            <h2>Hotel Intercontinental</h2>
+            <p>Location: Dhaka, Bangladesh</p>
+            <p>Price: $499 per night</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 Hotel Booking Website</p>
+    </footer>
+
+
+
+    <!--Slider js-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
+            });
+        });
+    </script>
+</body>
+</html>
